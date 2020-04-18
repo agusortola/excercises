@@ -1,4 +1,4 @@
-
+//------------------- COMMON DATA --------------------------------
 const catalog = [
     {
         name: 'monkey fart',
@@ -14,6 +14,10 @@ const catalog = [
     }
 ]
 
+//------------------- END COMMON DATA -------------------------------- 
+
+//------------------- EX 1 --------------------------------
+
 /* Desarrollar la función addToCatalog(name, stock), que recibe un nombre (texto) y un stock (cantidad), agregue ambos datos como un único objeto al array catalog. Luego tiene que mostrar por consola la colección. 
  */
 function addToCatalog(_name, _stock) {
@@ -23,8 +27,24 @@ function addToCatalog(_name, _stock) {
 
 }
 
-/* TEST sample call */
+/* EX1 test */
 addToCatalog('honey', 20) 
 addToCatalog('honeyvere', 25)
 
+//------------------- END EX 1 --------------------------------
 
+//------------------- EX 1 --------------------------------
+
+/* Ahora el cliente empieza a mandar cajas armadas, siempre de a dos a la vez. Desarrollar la función addTwoContainersToCatalog() */
+
+function addTwoContainersToCatalog(containers) {
+
+}
+
+/* EX2 test */
+const containers1 = [{name: 'menta', stock: 4}, {name: 'fruit', stock: 9}]
+const containers2 = [{name: 'pera', stock: 7}, {name: 'chocolate', stock: 2}]
+
+addTwoContainersToCatalog(containers1)
+
+addTwoContainersToCatalog(containers2)
