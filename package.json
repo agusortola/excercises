@@ -1,0 +1,12 @@
+{
+  "name": "Practica-Javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercises.js",
+  "scripts": {
+    "test": "node exercises.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
