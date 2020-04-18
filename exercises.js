@@ -1,5 +1,4 @@
 
-
 const catalog = [
     {
         name: 'monkey fart',
@@ -26,6 +25,6 @@ function addToCatalog(_name, _stock) {
 
 /* TEST sample call */
 addToCatalog('honey', 20) 
-addToCatalog('honeyvere', 20)
+addToCatalog('honeyvere', 25)
 
 
