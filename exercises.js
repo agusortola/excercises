@@ -58,8 +58,11 @@ la funcion addNBoxesToCatalog() */
 function addNBoxesToCatalog(container){
     for(let i = 0; i < container.length; i++) {
         catalog.push(container[i])
-    }
-        
+    }      
+}
+
+function addNBoxesToCatalogALT(container) {
+    container.forEach(box => catalog.push(box))
 }
  
 /* EX3 test */
@@ -68,10 +71,23 @@ const container2 = [{name: 'maní', stock: 2}]
 const container3 = []
 const container4 = [{name: 'multifru', stock: 13}, {name: 'vereConAcor', stock: 2}, {name: 'nutella', stock: 4}, {name: 'pija', stock: 9}]
 
-addNBoxesToCatalog(container1)
-addNBoxesToCatalog(container2)
-addNBoxesToCatalog(container3)
-addNBoxesToCatalog(container4)
+addNBoxesToCatalogALT(container1)
+addNBoxesToCatalogALT(container2)
+addNBoxesToCatalogALT(container3)
+addNBoxesToCatalogALT(container4)
 console.log(catalog)
 
 //------------------- END EX 3 --------------------------------
+
+//------------------- EX 4 ------------------------------------
+/* Se requiere una función que indique si existe un artículo en el catálogo. Se llama checkProductInCatalog(name) y recibe el nombre de un producto. En caso de tenerlo muestra "Producto en catálogo" por consola, si no lo tiene muestra "Producto inexistente". Además, si el nombre llega vacío, debe devolver el mensaje "Debe ingresar un nombre de producto"*/
+
+// Declarar la función
+
+/* EX4 test */
+
+checkProductInCatalog('tribeca')
+checkProductInCatalog('mani')
+checkProductInCatalog('')
+
+//------------------- END EX 4 ------------------------------------
