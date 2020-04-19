@@ -1,4 +1,9 @@
+Subir cambios:
 1- "git status" : muestra tus cambios
 2- "git add ." : agrega los cambios para hacer commit
 3- "git commit -m '(comentario)' : hace commit
 4- "git push": sube el commit al repositorio
+
+Bajar cambios:
+1- Cerrar todos los archivos
+2- "git pull" : trae los cambios desde master
