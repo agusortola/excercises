@@ -1,0 +1,4 @@
+1- "git status" : muestra tus cambios
+2- "git add ." : agrega los cambios para hacer commit
+3- "git commit -m '(comentario)' : hace commit
+4- "git push": sube el commit al repositorio
