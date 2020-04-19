@@ -54,23 +54,24 @@ console.log(catalog)*/
 //------------------- EX 3 ------------------------------------
 
 /*Ahora el cliente manda containers de n boxes, pueden tener una, dos, tres, o más. Desarrollar
-la funcion addNContainersToCatalog() */
-
+la funcion addNBoxesToCatalog() */
 function addNBoxesToCatalog(container){
-
+    for(let i = 0; i < container.length; i++) {
+        catalog.push(container[i])
+    }
+        
 }
-
+ 
 /* EX3 test */
 const container1 = [{name: 'menta', stock: 4}, {name: 'fruit', stock: 7}, {name: 'pera', stock: 7}]
 const container2 = [{name: 'maní', stock: 2}]
 const container3 = []
-const container4 = [ {name: 'multifru', stock: 13}, {name: 'vereConAcor', stock: 2}, {name: 'nutella', stock: 4}, {name: 'pija', stock: 9}]
+const container4 = [{name: 'multifru', stock: 13}, {name: 'vereConAcor', stock: 2}, {name: 'nutella', stock: 4}, {name: 'pija', stock: 9}]
 
 addNBoxesToCatalog(container1)
 addNBoxesToCatalog(container2)
 addNBoxesToCatalog(container3)
 addNBoxesToCatalog(container4)
-
 console.log(catalog)
 
 //------------------- END EX 3 --------------------------------
