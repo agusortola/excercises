@@ -80,7 +80,7 @@ console.log(catalog)
 //------------------- END EX 3 --------------------------------
 
 //------------------- EX 4 ------------------------------------
-/* Se requiere una función que indique si existe un artículo en el catálogo. Se llama checkProductInCatalog(name) y recibe el nombre de un producto. En caso de tenerlo muestra "Producto en catálogo" por consola, si no lo tiene muestra "Producto inexistente". Además, si el nombre llega vacío, debe devolver el mensaje "Debe ingresar un nombre de producto"*/
+/* Se requiere una función que indique si existe un artículo en el catálogo. Se llama checkProductInCatalog(name) y recibe el nombre de un producto. En caso de tenerlo muestra "Producto en catálogo" por consola, si no lo tiene muestra "Producto inexistente". No tiene que tener en cuenta si hay stock o no. Además, si el nombre llega vacío, debe devolver el mensaje "Debe ingresar un nombre de producto"*/
 
 // Declarar la función
 
