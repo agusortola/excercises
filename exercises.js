@@ -37,9 +37,9 @@ function addBoxToCatalog(_name, _stock) {
 
 /* Ahora el cliente empieza a mandar box armadas, siempre de a dos a la vez. Desarrollar la función addTwoContainersToCatalog() */
 
-function addTwoBoxesToCatalog(container) {
-    catalog.push(container[0], container[1])
-}
+//function addTwoBoxesToCatalog(container) {
+//    catalog.push(container[0], container[1])
+//}
 
 /* EX2 test 
 const container1 = [{name: 'menta', stock: 4}, {name: 'fruit', stock: 9}]
@@ -54,7 +54,7 @@ console.log(catalog)*/
 //------------------- EX 3 ------------------------------------
 
 /*Ahora el cliente manda containers de n boxes, pueden tener una, dos, tres, o más. Desarrollar
-la funcion addNBoxesToCatalog() */
+la funcion addNBoxesToCatalog()
 function addNBoxesToCatalog(container){
     for(let i = 0; i < container.length; i++) {
         catalog.push(container[i])
@@ -62,10 +62,12 @@ function addNBoxesToCatalog(container){
 }
 
 function addNBoxesToCatalogALT(container) {
+    container.forEach(box => console.log('Esta caja tiene ', box.stock , ' unidades de ', box.name))
     container.forEach(box => catalog.push(box))
 }
- 
-/* EX3 test */
+
+
+/* EX3 test 
 const container1 = [{name: 'menta', stock: 4}, {name: 'fruit', stock: 7}, {name: 'pera', stock: 7}]
 const container2 = [{name: 'maní', stock: 2}]
 const container3 = []
@@ -75,8 +77,11 @@ addNBoxesToCatalogALT(container1)
 addNBoxesToCatalogALT(container2)
 addNBoxesToCatalogALT(container3)
 addNBoxesToCatalogALT(container4)
-console.log(catalog)
 
+
+const catalogOnlyMoreThan4 = catalog.filter(box => box.stock >= 9)
+console.log(catalogOnlyMoreThan4)
+*/
 //------------------- END EX 3 --------------------------------
 
 //------------------- EX 4 ------------------------------------
@@ -84,6 +89,11 @@ console.log(catalog)
 
 // Declarar la función
 
+function checkProductInCatalog(value) {
+for(let i = 0; i < catalog.length; i++) {
+    if (catalog[i].name === value) {console.log("Ojo, el producto " + catalog[i].name + " ya lo tenes en el catalogo")}
+}
+}
 /* EX4 test */
 
 checkProductInCatalog('tribeca')
